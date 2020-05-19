@@ -10,5 +10,5 @@ In this session the participants will be introduced to the basic fundamentals of
 - Level: Beginning to Intermediate
 
 ## Bio
-**Jeremy Meiss**
+***Jeremy Meiss***  
 Jeremy is the Head of DevRel & Community at CircleCI, previously at Solace, Auth0, and XDA. He is a lover of all things coffee, community, open source, and tech. He is also house-broken, and (generally) plays well with others.
