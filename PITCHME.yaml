@@ -3,6 +3,10 @@
 # PITCHME-DOT-YAML-SETTINGS-THEME-BUILDER-GENERATED-START
 theme            : template
 theme-background : [ "#343434" ]
+background          : assets/img/twitter_bg.png
+background-position : center
+background-size     : 100% 100%
+background-opacity  : 100
 theme-headline   : [ "Roboto", "#04AA51", "none", "#FFFFFF", "100", "120", "15" ]
 theme-byline     : [ "Open Sans", "#27A0B6", "none", "#B3D6C9", "100", "110", "15" ]
 theme-text       : [ "Open Sans", "#FFFFFF", "none", "#92B9B3", "100", "100", "15" ]
