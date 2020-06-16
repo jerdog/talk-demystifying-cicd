@@ -13,4 +13,4 @@ In this session the participants will be introduced to the basic fundamentals of
 ***Jeremy Meiss***  
 Jeremy is the Head of DevRel & Community at CircleCI, previously at Solace, Auth0, and XDA. He is a lover of all things coffee, community, open source, and tech. He is also house-broken, and (generally) plays well with others.
 
-***Note: Loading this locally requires [GitPitch Desktop](https://gitpitch.com/docs/work-offline/desktop/) and then is started via steps [here](https://gitpitch.com/docs/pro-features/desktop-launch), which in short would be `gpd` in the local folder of the repo.***
+***Note: Loading this locally requires [GitPitch Desktop](https://gitpitch.com/docs/work-offline/desktop/) and then is started via steps [here](https://gitpitch.com/docs/pro-features/desktop-launch), which in short would be `gpd` in the local folder of the repo and then loading up http://localhost:9000/ .***
