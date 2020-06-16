@@ -1,6 +1,45 @@
+@snap[midpoint]
 # Demystifying CI/CD 
+@snapend
+---
+# Some clever story
+
 
 ---
+# Define terms
+
+
+---
+## "DevOps"
+
+![What is devops](assets/img/devops_is_coming.jpeg)
+
+---
+## "CI"
+
+
+---
+## "CD"
+
+
+---
+# So about CI/CD...
+
+Note:
+I've been part of development teams where code would take weeks or months before it was pushed to testing, and often months before it would be deployed to production. And that was just one team, working on one feature, while other teams worked on other features doing the same thing. It was also not uncommon to be working on a project for a year - only to have it dumped because the business and/or customer had already moved past the need. Who here would prefer slow code delivery cycles? Every technology delivery team wants to increase their code delivery velocity and the quality of the code they push to market.
+
+---
+## DevOps Lifecycle
+
+@snap[midpoint]
+![width=600](assets/img/devops_lifecycle.png)
+@snapend
+
+Note:
+
+ Who here is familiar with the DevOps Lifecycle?
+
+
 
 ### Add Some Slide Candy
 

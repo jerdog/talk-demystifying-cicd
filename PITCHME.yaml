@@ -17,5 +17,5 @@ theme-controls   : [ "#C0C0C0" ]
 theme-margins    : [ "0", "15px" ]
 logo             : assets/img/logo.png
 logo-position    : bottom-left
-layout           : center
+layout           : top
 # PITCHME-DOT-YAML-SETTINGS-THEME-BUILDER-GENERATED-END
