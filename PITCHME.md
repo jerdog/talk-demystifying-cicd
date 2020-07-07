@@ -1,14 +1,11 @@
 @snap[midpoint]
 # Demystifying CI/CD 
 @snapend
----
-# Some clever story
 
-
----
-# "DevOps"
-
-![What is devops](assets/img/devops_is_coming.jpeg)
+Note:
+- Who here is familiar with CI/CD?
+- Who knows the difference between CD and CD?
+- Who doesn't care and was looking to pass the time checking email during this session?
 
 ---
 # So about CI/CD...
@@ -24,6 +21,23 @@ I've been part of development teams where code would take weeks or months before
 Note:
 Time is a dev's most important and valuable asset. If we don't manage our time properly, then we're not able to accomplish our goals, finish our projects per their deadlines, right? And we'll also run the risk of, you know, failing our team in regards to delivering tasks and software, right? Often times devs get wrapped up in our own heads sometimes, you know, when we're doing a pretty intensive work on trying to fix bugs manually, and we encounter these moments that we'll call time sucks, right? Where we're just spinning our wheels, right. We're looking for bugs, for problems within the code base. And a lot of times we can leverage some other tooling, right, to help us with these these time sucks that we get ourselves into.
 
+---
+@snap[west span-45 text-center]
+![jeremy](assets/img/london-bridge-over-thames-jeremy-800px.png)
+@snapend
+
+@snap[east span-55 text-8 text-center]
+Head of DevRel<br />
+@circleci
+@snapend
+
+---
+# "DevOps"
+
+![What is devops](assets/img/devops_is_coming.jpeg)
+
+Note:
+DevOps is a set of practices that combines software development (Dev) and information-technology operations (Ops) which aims to shorten the systems development life cycle and provide continuous delivery with high software quality.
 
 ---
 @snap[midpoint]
@@ -33,7 +47,6 @@ Time is a dev's most important and valuable asset. If we don't manage our time p
 Note:
 CI/CD are Principles & Practices that enable teams to release quality code
 Fail Fast is the most important here. The ability to know when stuff is broken is invaluable. It leads to faster fixes and delivery of quality code. Quickly fix issues, resubmit fixes. Deliver stable code consistently.
-
 
 ---
 @snap[west span-45 text-center]
@@ -72,10 +85,34 @@ Note:
 Now, continuous delivery is basically automation that helps us with releasing our software faster. Actually, in most occasions smarter, and it's also ensuring that we are lowering risks to our release processes. The code and the software being released should be, it should be at a higher quality. And then by using these continuous delivery mechanisms you're actually lowering your costs. You're lowering the cost for time for your developers. You should be lowering your costs for actual billable items such as, time spent delivering software to multiple infrastructures. Could be that you're delivering software to staging. Could be delivering software to maybe a QA type of environment. And then you're also lowering costs to delivering software to your production level infrastructures.
 
 ---
-### So now can I CI/CD?
+@snap[midpoint]
+## So now can I CI/CD?
+@snapend
 
 Note:
 As we mentioned when defining DevOps as a term, much has changed in the way that developers build and ship code. In implementing CI/CD, you're implementing practices and principles which aren't really about tooling. It's important that you and your teams sit down and decide how you will implememnt CI/CD practices and principles. CI/CD aims to break down the walls between Dev and Ops and get everyone on the same page working together. You don't have to implement CI/CD all at once. Instead, thing about it as iterative in and of itself. The systems and tech currently in place in your organization, combined with the culture (which in itself might need to be reformed) dramatically incluence the customization needed to implement.
+
+---
+@snap[midpoint]
+## CI or CD?
+@snapend
+
+Note:
+Continuous integration automates the building and testing of your software. Continuous deployment is an extension of this automation and allows for your software to be deployed after every code commit that passes your test suite. The most successful development teams deploy their software often.
+
+---
+@snap[midpoint]
+## So now CI?
+@snapend
+
+It is important to get a continuous integration (CI) pipeline set up as early as possible in the development of your application. Once tests are added to your CI pipeline, you can continue to innovate and build with confidence knowing that you cannot merge code to master that doesn’t pass your tests. Additionally, developing a continuous deployment workflow into your CI pipeline provides the automation of deployment. Automating your software’s build, test, and deployment is important to getting back to work building the features that your users care about the most.
+
+
+
+
+
+
+
 
 ---
 ## DevOps Lifecycle
@@ -85,8 +122,7 @@ As we mentioned when defining DevOps as a term, much has changed in the way that
 @snapend
 
 Note:
-
- Who here is familiar with the DevOps Lifecycle?
+Who here is familiar with the DevOps Lifecycle?
 
 
 
