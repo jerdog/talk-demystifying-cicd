@@ -100,18 +100,39 @@ As we mentioned when defining DevOps as a term, much has changed in the way that
 Note:
 Continuous integration automates the building and testing of your software. Continuous deployment is an extension of this automation and allows for your software to be deployed after every code commit that passes your test suite. The most successful development teams deploy their software often.
 
+The software development process consists of three main centers of work:
+
+---
+@snap[midpoint]
+### Code creation
+@snapend
+
+Note: 
+Creation of the code: This is where the software development team is the most creative. They are turning user stories into elegant code. The most important tool here would be the VCS like GitHub, BitBucket, etc.
+
+---
+@snap[midpoint]
+### Code orchestration
+@snapend
+
+Note: 
+Orchestration of new code as software: This is where the heart of continuous integration lives. Once the developer commits code, the continuous integration build server automates the build, test, and deploy process. It does the heavy lifting of turning the code into working software. Users configure how the code is processed via a config file, usually YAML, and this file often allows for almost infinite configurations, allowing teams to build and test their way.
+
+---
+@snap[midpoint]
+### Code logistics
+@snapend
+
+Note: 
+Logistics: This is the final step of shipping the new software to production. The logistics part of the software development process includes getting the tested and approved code into production. This includes the setup, configuration, and management of the production servers. To gain the full benefit of continuous integration, continuous deployment is necessary.
+
 ---
 @snap[midpoint]
 ## So now CI?
 @snapend
 
+Note:
 It is important to get a continuous integration (CI) pipeline set up as early as possible in the development of your application. Once tests are added to your CI pipeline, you can continue to innovate and build with confidence knowing that you cannot merge code to master that doesn’t pass your tests. Additionally, developing a continuous deployment workflow into your CI pipeline provides the automation of deployment. Automating your software’s build, test, and deployment is important to getting back to work building the features that your users care about the most.
-
-
-
-
-
-
 
 
 ---
