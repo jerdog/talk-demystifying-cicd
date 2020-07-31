@@ -136,6 +136,75 @@ It is important to get a continuous integration (CI) pipeline set up as early as
 
 
 ---
+@snap[midpoint]
+### Make sure everyone is on the same page
+@snapend
+
+Note:
+Make sure everyone is on the same page with respect to what you’re trying to achieve by introducing a new CI/CD tool. There's nothing worse than reading from different playbooks on how to do a task. This requires everyone in the org to know what the processes are and how to go about their day.
+
+---
+@snap[midpoint]
+### Always start small
+@snapend
+
+Note: 
+Continuous integration is not just about implementing a new tool. It is about changing how the development team works. It’s a new mindset. And, making culture changes in an organization is not easy. The best way to get started with continuous integration is to start small. Don’t try to make your entire organization into a model DevOps team overnight. Give it a day or two :D. Instead, make process changes on one team to see if they work within your organization. If you see improvements, keep moving incrementally.
+
+---
+@snap[midpoint]
+### Do what works for you
+@snapend
+
+Note:
+Do what works for you. Know that DevOps might not be the right solution for your organization. Some companies have been successful for a long time without DevOps, and it might not be right for them, given their culture or their product needs. For example, if confidentiality is a big part of your company’s product strategy, then shipping incrementally to get feedback would not work for you, as you’d need to keep all product details under lock and key until a big launch. In that environment, it would be very difficult to build a DevOps culture.
+
+---
+@snap[midpoint]
+### Always measure
+@snapend
+
+Note:
+Always measure. Before you start any improvement plan, get accurate metrics for where you’re currently at (i.e. our dev cycle takes X amount of time). Do this before you’ve invited a site reliability engineer onto the development team. Then after a small amount of time, you’ll be able to see whether it’s been effective. As an example: When a lot of Agile transformation was happening, many companies adopted standups, without really understanding why, or measuring whether it had a positive effect on their team. This likely wasted more time than it saved.
+
+---
+@snap[midpoint]
+### Do not try to automate everything
+@snapend
+
+Note:
+Do not try to automate everything. At least not all at once. One misconception about DevOps is that all the infrastructure provisioning and the configuration management must be done automatically. This is referred to as “infrastructure as code.” But some things work better when they are manual; automation is not the solution for everything. Sometimes, you have to start the manual way to figure out what the best solution for automation actually is.
+
+---
+@snap[west span-45 text-center]
+### Proof of concept
+@snapend
+
+@snap[east span-55 text-8 text-center]
+@ul[list-spaced-bullets](false)
+- A rigorous testing practice
+- Consistent software environments
+- Training on continuous integration practices.
+- Reports to measure key metrics.
+@ulend
+@snapend
+
+Note: 
+Use your next small project as a proof of concept and get the following fundamentals into place:
+
+- A rigorous testing practice, ideally using automated tests.
+- Consistent software environments, from testing to production.
+- Training on continuous integration practices.
+- Reports to measure key metrics.
+
+Once your team starts committing regularly and in small increments, they’ll see how much easier it is to be responsive to bugs. And, as they resolve bugs faster, they will deliver features even faster. This will give your team the momentum to scale continuous integration across the organization.
+
+---
+
+
+
+
+---
 ## DevOps Lifecycle
 
 @snap[midpoint]
