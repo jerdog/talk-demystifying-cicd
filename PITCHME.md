@@ -63,7 +63,7 @@ Fail Fast is the most important here. The ability to know when stuff is broken i
 @snapend
 
 Note: 
-Continuous integration is the practice where developers are merging code often to a shared code base. Meaning, if you have a repo on GitHub and you have, let’s say ten developers, all ten developers will branch from that shared code base and they’ll have an individual siloed based on their development environments. And, as they’re writing code they are continuously pushing code up into this shared code base. The reason for that is sometimes when we write code it can take us a week, two weeks, whatever the time frame is and what that means is if you are developing in isolation the rest of your team doesn’t really know what’s happening until push those changes upstream, right, to that upstream repo. So that, they can pull them down and see what’s going on. By doing so the team is more informed about what each other’s code base looks like and the potential future conflicts that could arise. So as developers are merging codebase changes often, we want to run automated tests, right, automated tests to validate these builds. So, as you’re pushing your code base up stream we’re definitely inclined to start running these automated tests to insure the code that you’re pushing is actually of quality. Again, only tested code is integrated into the code base and then the merge of these changes are frequently released to our production branch or our release branch. Continuous integration gets us a speed in a sense that, you know, once you write some code, you push it up stream and automation takes over, and it them validates those builds to insure that you’re only pushing quality code into the production branches. 
+Continuous integration is the practice where developers are merging code often to a shared code base. Meaning, if you have a repo on GitHub and you have, let’s say ten developers, all ten developers will branch from that shared code base and they’ll have an individual silo based on their development environments. And, as they’re writing code they are continuously pushing code up into this shared code base. The reason for that is sometimes when we write code it can take us a week, two weeks, whatever the time frame is and what that means is if you are developing in isolation the rest of your team doesn’t really know what’s happening until push those changes upstream, right, to that upstream repo. So that, they can pull them down and see what’s going on. By doing so the team is more informed about what each other’s code base looks like and the potential future conflicts that could arise. So as developers are merging codebase changes often, we want to run automated tests, right, automated tests to validate these builds. So, as you’re pushing your code base up stream we’re definitely inclined to start running these automated tests to insure the code that you’re pushing is actually of quality. Again, only tested code is integrated into the code base and then the merge of these changes are frequently released to our production branch or our release branch. Continuous integration gets us a speed in a sense that, you know, once you write some code, you push it up stream and automation takes over, and it them validates those builds to insure that you’re only pushing quality code into the production branches. 
 
 
 ---
@@ -128,11 +128,46 @@ Logistics: This is the final step of shipping the new software to production. Th
 
 ---
 @snap[midpoint]
+## Benefits of CI
+@snapend
+
+Note:
+The fundamental tenet of continuous integration is quite simple: commit and integrate your code often—daily at a minimum. Such a small change in your software development process can yield big results.
+Using this development strategy, you can:
+- Improve team productivity and efficiency
+- Accelerate speed to market
+- Identify product/market fit
+- Release higher quality, more stable products
+- Increase customer satisfaction
+- Keep developers happy and shipping code
+
+---
+@snap[midpoint]
+### Say _WHAT_ about benefits?
+@snapend
+
+Note:
+You may be thinking: "How do these benefits accrue from such a simple change in your workflow?"
+When you commit more often, you can identify and resolve merge conflicts earlier, or avoid them altogether. So, instead of writing a thousand lines of code and finding an error, you’ve only written a hundred. Finding the bugs in your code becomes an errand of a few minutes instead of a few hours. This leads to improved team productivity and helps developers ship working code more quickly.
+
+---
+@snap[midpoint]
+### I feel the need.... the need for SPEED!
+@snapend
+
+Note:
+Shipping new features quickly means increasing your speed to market. This gives your team a competitive edge in two key ways:
+
+1. Your customers are getting access to new features faster, leading to higher customer satisfaction
+2. Your company is getting a faster return on investment from new features. Rather than waiting for the next milestone to release code, you can deliver value as soon as a new feature is ready for the market.
+
+---
+@snap[midpoint]
 ## So now CI?
 @snapend
 
 Note:
-It is important to get a continuous integration (CI) pipeline set up as early as possible in the development of your application. Once tests are added to your CI pipeline, you can continue to innovate and build with confidence knowing that you cannot merge code to master that doesn’t pass your tests. Additionally, developing a continuous deployment workflow into your CI pipeline provides the automation of deployment. Automating your software’s build, test, and deployment is important to getting back to work building the features that your users care about the most.
+With that bit of info out of the way, it is important to get a continuous integration (CI) pipeline set up as early as possible in the development of your application. Once tests are added to your CI pipeline, you can continue to innovate and build with confidence knowing that you cannot merge code to master that doesn’t pass your tests. Additionally, developing a continuous deployment workflow into your CI pipeline provides the automation of deployment. Automating your software’s build, test, and deployment is important to getting back to work building the features that your users care about the most.
 
 
 ---
@@ -165,7 +200,7 @@ Do what works for you. Know that DevOps might not be the right solution for your
 @snapend
 
 Note:
-Always measure. Before you start any improvement plan, get accurate metrics for where you’re currently at (i.e. our dev cycle takes X amount of time). Do this before you’ve invited a site reliability engineer onto the development team. Then after a small amount of time, you’ll be able to see whether it’s been effective. As an example: When a lot of Agile transformation was happening, many companies adopted standups, without really understanding why, or measuring whether it had a positive effect on their team. This likely wasted more time than it saved.
+Always measure. Before you start any improvement plan, get accurate metrics for where you’re currently at (i.e. our dev cycle takes X amount of time). Do this before you’ve invited a site reliability engineer onto the development team. Then after a small amount of time, you’ll be able to see whether it’s been effective. As an example: When a lot of Agile transformation was happening, many companies adopted standups, without really understanding why, or measuring whether it had a positive effect on their team. This likely wasted more time than it saved. We'll touch on a few universal metrics to pay attention to in a few minutes.
 
 ---
 @snap[midpoint]
@@ -190,7 +225,7 @@ Do not try to automate everything. At least not all at once. One misconception a
 @snapend
 
 Note: 
-Use your next small project as a proof of concept and get the following fundamentals into place:
+A great way to get started seeing how this could work for you is to use your next small project as a proof of concept and get the following fundamentals into place:
 
 - A rigorous testing practice, ideally using automated tests.
 - Consistent software environments, from testing to production.
@@ -200,6 +235,102 @@ Use your next small project as a proof of concept and get the following fundamen
 Once your team starts committing regularly and in small increments, they’ll see how much easier it is to be responsive to bugs. And, as they resolve bugs faster, they will deliver features even faster. This will give your team the momentum to scale continuous integration across the organization.
 
 ---
+@snap[west span-45 text-center]
+## CI/CD Better Practices
+@snapend
+
+@snap[east span-55 text-8 text-center]
+@ul[list-spaced-bullets](false)
+- Make testing an integral part of the development process. Tests should be written as code is created.
+
+@ulend
+@snapend
+
+Note:
+Developers who practice continuous integration commit early and often. This allows them to detect conflicts before deploying code to production. And, having a smaller commit makes it easier to troubleshoot the code if there are any issues. Committing software daily, or even more often, is necessary for continuous integration, but not sufficient.
+
+Fostering a rigorous testing culture is the most important element that a company needs for successful continuous integration. In order to confidently integrate new code into the mainline, the team needs the confidence that the code is sound. Engineers should write tests as each feature is being developed. At CircleCI, we run tests on any new code that is committed and our system alerts the developer if they have a successful “green” build, or if they need to fix issues because the build was “red.” Without tests, of course, green builds are meaningless. Ideally, the team is using automated testing, though that is not a requirement. QA services, such as Rainforest QA, can be integrated into the continuous integration process.
+
+---
+@snap[west span-45 text-center]
+## CI/CD Better Practices
+@snapend
+
+@snap[east span-55 text-8 text-center]
+@ul[list-spaced-bullets](false)
+- Make testing an integral part of the development process. Tests should be written as code is created.
+- Ensure that the testing environment mirrors production.
+
+@ulend
+@snapend
+
+Note:
+To support your rigorous testing culture, it’s important that the testing environment mirrors the production environment. Otherwise, you have no guarantee that what you’re testing will work in production. This means the testing environment should use the same version of the database, web server configuration, artifacts, etc.
+
+---
+@snap[west span-45 text-center]
+## CI/CD Better Practices
+@snapend
+
+@snap[east span-55 text-8 text-center]
+@ul[list-spaced-bullets](false)
+- Make testing an integral part of the development process. Tests should be written as code is created.
+- Ensure that the testing environment mirrors production.
+- Use coding best practices, such as pair programming.
+
+@ulend
+@snapend
+
+Note:
+Another best practice for software development is pairing during coding. For more complex pieces of functionality, pairs discuss the architecture approach before a single line of code is written. Before any code is merged into production, another developer always reviews the code. This helps ensure that coding best practices have been used, the code does not conflict with existing code or code that another developer is working on, and the new functionality is scalable.
+
+---
+@snap[west span-45 text-center]
+## CI/CD Better Practices
+@snapend
+
+@snap[east span-55 text-8 text-center]
+@ul[list-spaced-bullets](false)
+- Make testing an integral part of the development process. Tests should be written as code is created.
+- Ensure that the testing environment mirrors production.
+- Use coding best practices, such as pair programming.
+- Automate the deploy workflow.
+@ulend
+@snapend
+
+Note:
+Finally, to ensure that the entire software development pipeline is fast and efficient, the deploy workflow should also be automated. By automating the deploy workflow, the team gets their finished code to production more quickly. Because, after all, what’s the point of developing software quickly if it’s not getting to the customer?
+
+
+---
+@snap[west span-45 text-center]
+## Key CI/CD Metrics
+@snapend
+
+@snap[east span-55 text-8 text-center]
+@ul[list-spaced-bullets list-fade-fragments]
+- Lead time @note[Lead time is the length of time that it takes for your workflow to run from first trigger to completion. It is a measure of how quickly you can get a signal. A short lead time requires a maximally automated software development pipeline. That is why teams use continuous integration to automate building and testing. Automation of the pipeline via CI shrinks deployment timelines of weeks to months down to hours, if not minutes.]
+- Deployment frequency @note[Deployment frequency: How often your team kicks off a workflow is an indication of how many discrete units of work are moving through the development pipeline. With a fully automated software development pipeline, even complicated updates to your codebase can be deployed automatically. Hotfixes are available immediately — and they go through the same rigorous testing as any other update.]
+- Mean time to recovery (MTTR) @note[Mean time to recovery (MTTR): Mean time to recovery is contingent on getting actionable information, fast. Getting a failed status returned quickly will enable you to get from red to green in the shortest amount of time. Adopting CI/CD practices enables rapid feedback loops, and is the best way to ensure fast signal for your developers. A robust CI/CD practice includes realtime artifacts such as logs and coverage reports from your test suite and gives devs the ability to troubleshoot in an environment equivalent to the production environment.]
+- Change fail percentage @note[Change fail percentage: The highest performing teams rarely push bad code to their default branch. But this doesn’t mean that these teams never write faulty code. Testing and security checks are performed on a separate branch and only when everything passes is a merge allowed to take place. A team should know that their code works well before it is merged into the default branch.]
+@ulend
+@snapend
+
+Note:
+So earlier I mentioned that there were some key metrics to track regardless....
+
+
+---
+@snap[midpoint]
+### Regular cadence
+@snapend
+
+Note:
+It’s helpful to have a regular cadence of reporting. Automated daily reports help ensure that if there is an error, the team catches it fast. And, analyzing the weekly reports allows teams to dive much deeper into the CI processes and find improvement areas.
+
+
+
+
 
 
 
