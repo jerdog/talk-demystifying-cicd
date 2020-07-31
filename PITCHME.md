@@ -54,7 +54,7 @@ Fail Fast is the most important here. The ability to know when stuff is broken i
 @snapend
 
 @snap[east span-55 text-8 text-center]
-@ul[list-spaced-bullets](false)
+@ul[list-spaced-bullets list-fade-fragments](true)
 - Merge code changes often
 - Run automated tests to validate builds
 - Only integrate tested code into code base
@@ -72,7 +72,7 @@ Continuous integration is the practice where developers are merging code often t
 @snapend
 
 @snap[east span-55 text-8 text-center]
-@ul[list-spaced-bullets](false)
+@ul[list-spaced-bullets list-fade-fragments](true)
 - Faster release cycles
 - Low-risk releases
 - Higher quality
@@ -216,7 +216,7 @@ Do not try to automate everything. At least not all at once. One misconception a
 @snapend
 
 @snap[east span-55 text-8 text-center]
-@ul[list-spaced-bullets](false)
+@ul[list-spaced-bullets list-fade-fragments](true)
 - A rigorous testing practice
 - Consistent software environments
 - Training on continuous integration practices.
@@ -240,67 +240,16 @@ Once your team starts committing regularly and in small increments, they’ll se
 @snapend
 
 @snap[east span-55 text-8 text-center]
-@ul[list-spaced-bullets](false)
-- Make testing an integral part of the development process. Tests should be written as code is created.
-
+@ul[list-spaced-bullets list-fade-fragments](true)
+- Make testing an integral part of the development process. @note [Fostering a rigorous testing culture is the most important element that a company needs for successful continuous integration. In order to confidently integrate new code into the mainline, the team needs the confidence that the code is sound. Engineers should write tests as each feature is being developed. At CircleCI, we run tests on any new code that is committed and our system alerts the developer if they have a successful “green” build, or if they need to fix issues because the build was “red.” Without tests, of course, green builds are meaningless. Ideally, the team is using automated testing, though that is not a requirement. QA services, such as Rainforest QA, can be integrated into the continuous integration process.]
+- Ensure that the testing environment mirrors production. @note [To support your rigorous testing culture, it’s important that the testing environment mirrors the production environment. Otherwise, you have no guarantee that what you’re testing will work in production. This means the testing environment should use the same version of the database, web server configuration, artifacts, etc.]
+- Use coding better practices, such as pair programming. @note [Another better practice for software development is pairing during coding. For more complex pieces of functionality, pairs discuss the architecture approach before a single line of code is written. Before any code is merged into production, another developer always reviews the code. This helps ensure that coding best practices have been used, the code does not conflict with existing code or code that another developer is working on, and the new functionality is scalable.]
+- Automate the deploy workflow. @note [Finally, to ensure that the entire software development pipeline is fast and efficient, the deploy workflow should also be automated. By automating the deploy workflow, the team gets their finished code to production more quickly. Because, after all, what’s the point of developing software quickly if it’s not getting to the customer?]
 @ulend
 @snapend
 
 Note:
 Developers who practice continuous integration commit early and often. This allows them to detect conflicts before deploying code to production. And, having a smaller commit makes it easier to troubleshoot the code if there are any issues. Committing software daily, or even more often, is necessary for continuous integration, but not sufficient.
-
-Fostering a rigorous testing culture is the most important element that a company needs for successful continuous integration. In order to confidently integrate new code into the mainline, the team needs the confidence that the code is sound. Engineers should write tests as each feature is being developed. At CircleCI, we run tests on any new code that is committed and our system alerts the developer if they have a successful “green” build, or if they need to fix issues because the build was “red.” Without tests, of course, green builds are meaningless. Ideally, the team is using automated testing, though that is not a requirement. QA services, such as Rainforest QA, can be integrated into the continuous integration process.
-
----
-@snap[west span-45 text-center]
-## CI/CD Better Practices
-@snapend
-
-@snap[east span-55 text-8 text-center]
-@ul[list-spaced-bullets](false)
-- Make testing an integral part of the development process. Tests should be written as code is created.
-- Ensure that the testing environment mirrors production.
-
-@ulend
-@snapend
-
-Note:
-To support your rigorous testing culture, it’s important that the testing environment mirrors the production environment. Otherwise, you have no guarantee that what you’re testing will work in production. This means the testing environment should use the same version of the database, web server configuration, artifacts, etc.
-
----
-@snap[west span-45 text-center]
-## CI/CD Better Practices
-@snapend
-
-@snap[east span-55 text-8 text-center]
-@ul[list-spaced-bullets](false)
-- Make testing an integral part of the development process. Tests should be written as code is created.
-- Ensure that the testing environment mirrors production.
-- Use coding best practices, such as pair programming.
-
-@ulend
-@snapend
-
-Note:
-Another best practice for software development is pairing during coding. For more complex pieces of functionality, pairs discuss the architecture approach before a single line of code is written. Before any code is merged into production, another developer always reviews the code. This helps ensure that coding best practices have been used, the code does not conflict with existing code or code that another developer is working on, and the new functionality is scalable.
-
----
-@snap[west span-45 text-center]
-## CI/CD Better Practices
-@snapend
-
-@snap[east span-55 text-8 text-center]
-@ul[list-spaced-bullets](false)
-- Make testing an integral part of the development process. Tests should be written as code is created.
-- Ensure that the testing environment mirrors production.
-- Use coding best practices, such as pair programming.
-- Automate the deploy workflow.
-@ulend
-@snapend
-
-Note:
-Finally, to ensure that the entire software development pipeline is fast and efficient, the deploy workflow should also be automated. By automating the deploy workflow, the team gets their finished code to production more quickly. Because, after all, what’s the point of developing software quickly if it’s not getting to the customer?
-
 
 ---
 @snap[west span-45 text-center]
