@@ -6,11 +6,6 @@ Note:
 - Who here is familiar with CI/CD?
 - Who knows the difference between CD and CD?
 - Who doesn't care and was looking to pass the time checking email during this session?
-
----
-# So about CI/CD...
-
-Note:
 I've been part of development teams where code would take weeks or months before it was pushed to testing, and often months before it would be deployed to production. And that was just one team, working on one feature, while other teams worked on other features doing the same thing. It was also not uncommon to be working on a project for a year - only to have it dumped because the business and/or customer had already moved past the need. Who here would prefer slow code delivery cycles? Every technology delivery team wants to increase their code delivery velocity and the quality of the code they push to market.
 
 ---
@@ -19,7 +14,7 @@ I've been part of development teams where code would take weeks or months before
 ![time is ticking](assets/img/time-is-ticking.gif)
 
 Note:
-Time is a dev's most important and valuable asset. If we don't manage our time properly, then we're not able to accomplish our goals, finish our projects per their deadlines, right? And we'll also run the risk of, you know, failing our team in regards to delivering tasks and software, right? Often times devs get wrapped up in our own heads sometimes, you know, when we're doing a pretty intensive work on trying to fix bugs manually, and we encounter these moments that we'll call time sucks, right? Where we're just spinning our wheels, right. We're looking for bugs, for problems within the code base. And a lot of times we can leverage some other tooling, right, to help us with these these time sucks that we get ourselves into.
+Time is a dev's most important and valuable asset. If we don't manage our time properly, then we're not able to accomplish our goals, finish our projects per their deadlines, etc. In addition we also run the risk of failing our team in regards to delivering tasks and software. Often times devs get wrapped up in our own heads sometimes when we're doing pretty intensive work on trying to fix bugs manually, and we tend to encounter these moments that we'll call time sucks. I'm not talking about Snapchat, TikTok, or Twitter. It's where we're just spinning our wheels looking for bugs, for problems within the code base. And a lot of times we can leverage some other tooling to help us with these these time sucks that we get ourselves into.
 
 ---
 @snap[west span-45 text-center]
@@ -31,13 +26,24 @@ Head of DevRel<br />
 @circleci
 @snapend
 
+Note: 
+Hi, I'm Jeremy Meiss and I am the Head of Developer Relations and Community at CircleCI. Today I'm going to be diving into what CI/CD is and hopefully make it easy to get a handle on, and as kind of a jumping off point to either implementing into your company, org, or project, or making improvements to your already existing process. So with that, I figure it's good to jump into defining some terms that I will be using over the next 25 minutes or so.
+
 ---
 # "DevOps"
 
 ![What is devops](assets/img/devops_is_coming.jpeg)
 
 Note:
-DevOps is a set of practices that combines software development (Dev) and information-technology operations (Ops) which aims to shorten the systems development life cycle and provide continuous delivery with high software quality.
+DevOps is a set of practices that combines software development (the "Dev") and information-technology operations (the "Ops") which aims to shorten the systems development life cycle and provide continuous delivery with high software quality.
+
+---
+## DevOps Lifecycle
+
+![lifecycle](assets/img/devops_lifecyle.png)
+
+<br>
+@size[10px](Fig.1 - Trulli, Puglia, Italy)
 
 ---
 @snap[midpoint]
@@ -82,7 +88,7 @@ Continuous integration is the practice where developers are merging code often t
 
 
 Note:
-Now, continuous delivery is basically automation that helps us with releasing our software faster. Actually, in most occasions smarter, and it's also ensuring that we are lowering risks to our release processes. The code and the software being released should be, it should be at a higher quality. And then by using these continuous delivery mechanisms you're actually lowering your costs. You're lowering the cost for time for your developers. You should be lowering your costs for actual billable items such as, time spent delivering software to multiple infrastructures. Could be that you're delivering software to staging. Could be delivering software to maybe a QA type of environment. And then you're also lowering costs to delivering software to your production level infrastructures.
+Now, continuous delivery is basically automation, or the overall chain of processes generally called a "pipeline", that helps us with releasing our software faster by automatically getting source code changes and running them through building, testing, packaging, and other related operations to produce a release. The goals of CD in producing software releases are generally automation, efficiency, reliability, reproducibility, and verification of quality (through continuous testing). In most cases it also means you are delivering smarter and lowering risks to your release processes. The code and the software being released should be at a higher quality, and by using these continuous delivery mechanisms you're actually lowering your costs for time for your developers, your costs for actual billable items such as time spent delivering software to multiple infrastructures like staging, QA, and production.
 
 ---
 @snap[midpoint]
@@ -90,7 +96,7 @@ Now, continuous delivery is basically automation that helps us with releasing ou
 @snapend
 
 Note:
-As we mentioned when defining DevOps as a term, much has changed in the way that developers build and ship code. In implementing CI/CD, you're implementing practices and principles which aren't really about tooling. It's important that you and your teams sit down and decide how you will implememnt CI/CD practices and principles. CI/CD aims to break down the walls between Dev and Ops and get everyone on the same page working together. You don't have to implement CI/CD all at once. Instead, thing about it as iterative in and of itself. The systems and tech currently in place in your organization, combined with the culture (which in itself might need to be reformed) dramatically incluence the customization needed to implement.
+Much has changed in the way that developers build and ship code. In implementing CI/CD, you're implementing practices and principles which aren't really about tooling. It's important that you and your teams sit down and decide how you will implememnt CI/CD practices and principles. CI/CD aims to break down the walls between Dev and Ops and get everyone on the same page working together. You don't have to implement CI/CD all at once. Instead, thing about it as iterative in and of itself. The systems and tech currently in place in your organization, combined with the culture (which in itself might need to be reformed) dramatically incluence the customization needed to implement.
 
 ---
 @snap[midpoint]
@@ -283,94 +289,4 @@ It’s helpful to have a regular cadence of reporting. Automated daily reports h
 
 
 
-
----
-## DevOps Lifecycle
-
-@snap[midpoint]
-![width=600](assets/img/devops_lifecycle.png)
-@snapend
-
-Note:
-Who here is familiar with the DevOps Lifecycle?
-
-
-
-### Add Some Slide Candy
-
-![IMAGE](assets/img/presentation.png)
-
----?color=linear-gradient(180deg, white 75%, black 25%)
-@title[Customize Slide Layout]
-
-@snap[west span-55]
-## Customize the Layout
-@snapend
-
-@snap[north-east span-45]
-![IMAGE](assets/img/presentation.png)
-@snapend
-
-@snap[south span-100]
-Snap Layouts let you create custom slide designs directly within your markdown.
-@snapend
-
----
-@title[Add A Little Imagination]
-
-@snap[north-west span-50 text-center]
-#### Engage your Audience
-@snapend
-
-@snap[west span-55]
-@ul[list-spaced-bullets text-09]
-- You will be amazed
-- What you can achieve
-- With a **little imagination**
-- And GitPitch Markdown
-@ulend
-@snapend
-
-@snap[east span-45]
-![IMAGE](assets/img/conference.png)
-@snapend
-
-@snap[south span-100 bg-black fragment]
-@img[shadow](assets/img/conference.png)
-@snapend
-
----
-
-@snap[north-east span-100 text-pink text-06]
-Let your code do the talking!
-@snapend
-
-```sql zoom-18
-CREATE TABLE "topic" (
-    "id" serial NOT NULL PRIMARY KEY,
-    "forum_id" integer NOT NULL,
-    "subject" varchar(255) NOT NULL
-);
-ALTER TABLE "topic"
-ADD CONSTRAINT forum_id
-FOREIGN KEY ("forum_id")
-REFERENCES "forum" ("id");
-```
-
-@snap[south span-100 text-gray text-08]
-@[1-5](You can step-and-ZOOM into fenced-code blocks, source files, and Github GIST.)
-@[6,7, zoom-13](Using GitPitch live code presenting with optional annotations.)
-@[8-9, zoom-12](This means no more switching between your slide deck and IDE on stage.)
-@snapend
-
-
----?image=assets/img/code.jpg&opacity=60&position=left&size=45% 100%
-
-@snap[east span-50 text-center]
-## Now It's **Your** Turn
-@snapend
-
-@snap[south-east span-50 text-center text-06]
-[Download GitPitch Desktop @fa[external-link]](https://gitpitch.com/docs/getting-started/tutorial/)
-@snapend
 
