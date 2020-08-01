@@ -23,7 +23,7 @@ Time is a dev's most important and valuable asset. If we don't manage our time p
 
 @snap[east span-55 text-8 text-center]
 Head of DevRel<br />
-@circleci
+![width=300](assets/img/logo.png)
 @snapend
 
 Note: 
@@ -38,12 +38,26 @@ Note:
 DevOps is a set of practices that combines software development (the "Dev") and information-technology operations (the "Ops") which aims to shorten the systems development life cycle and provide continuous delivery with high software quality.
 
 ---
-## DevOps Lifecycle
+@snap[west span-45 text-center]
+### DevOps Lifecycle
+@snapend
 
-![lifecycle](assets/img/devops_lifecyle.png)
+@snap[east span-55 text-8 text-center]
+@ul[list-spaced-bullets list-fade-fragments](true)
+- Plan @note [Initially plan yourself regarding the type of application you need to develop. Make the rough picture regarding the development process]  
+- Code @note [Code the application as per the client requirement.  with the plan, you have made in the initial step.]  
+- Build @note [Build the application by performing the integration of various codes you have done in the previous step.]  
+- Test @note [This is the heart of the application. Test the application that you have built so far. And the rebuilt the application if necessary.]  
+- Releases @note [If you succeed in the Test phase, then its time to release the application into Live.]  
+- Deploy @note [Deploy the code into a cloud environment for further usage. It is performed in such a manner any changes made should not affect the functioning of high traffic website.]  
+- Operate @note [Perform the operation on the code if any have.]  
+- Monitor @note [Monitor the performance of the application as per the client requirement. Keep a note on the performance of the application. Make modifications if any to satisfy the clients. And if does not reach up to the mark make changes in that particular area to satisfy the client.]  
+@ulend
+@snapend
 
-<br>
-@size[10px](Fig.1 - Trulli, Puglia, Italy)
+Note:
+
+
 
 ---
 @snap[midpoint]
