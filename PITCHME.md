@@ -40,24 +40,23 @@ DevOps is a set of practices that combines software development (the "Dev") and 
 ---
 @snap[west span-45 text-center]
 ### DevOps Lifecycle
+![lifecycle](assets/img/devops_lifecycle.png)
 @snapend
 
 @snap[east span-55 text-8 text-center]
 @ul[list-spaced-bullets list-fade-fragments](true)
-- Plan @note [Initially plan yourself regarding the type of application you need to develop. Make the rough picture regarding the development process]  
-- Code @note [Code the application as per the client requirement.  with the plan, you have made in the initial step.]  
-- Build @note [Build the application by performing the integration of various codes you have done in the previous step.]  
-- Test @note [This is the heart of the application. Test the application that you have built so far. And the rebuilt the application if necessary.]  
-- Releases @note [If you succeed in the Test phase, then its time to release the application into Live.]  
-- Deploy @note [Deploy the code into a cloud environment for further usage. It is performed in such a manner any changes made should not affect the functioning of high traffic website.]  
-- Operate @note [Perform the operation on the code if any have.]  
-- Monitor @note [Monitor the performance of the application as per the client requirement. Keep a note on the performance of the application. Make modifications if any to satisfy the clients. And if does not reach up to the mark make changes in that particular area to satisfy the client.]  
+- Plan @note[Initially plan yourself regarding the type of application you need to develop. Make the rough picture regarding the development process]  
+- Code @note[Code the application as per the client requirement.  with the plan, you have made in the initial step.]  
+- Build @note[Build the application by performing the integration of various codes you have done in the previous step.]  
+- Test @note[This is the heart of the application. Test the application that you have built so far. And the rebuilt the application if necessary.]  
+- Releases @note[If you succeed in the Test phase, then its time to release the application into Live.]  
+- Deploy @note[Deploy the code into a cloud environment for further usage. It is performed in such a manner any changes made should not affect the functioning of high traffic website.]  
+- Operate @note[Perform the operation on the code if any have.]  
+- Monitor @note[Monitor the performance of the application as per the client requirement. Keep a note on the performance of the application. Make modifications if any to satisfy the clients. And if does not reach up to the mark make changes in that particular area to satisfy the client.]  
 @ulend
 @snapend
 
 Note:
-
-
 
 ---
 @snap[midpoint]
@@ -65,8 +64,7 @@ Note:
 @snapend
 
 Note:
-CI/CD are Principles & Practices that enable teams to release quality code
-Fail Fast is the most important here. The ability to know when stuff is broken is invaluable. It leads to faster fixes and delivery of quality code. Quickly fix issues, resubmit fixes. Deliver stable code consistently.
+CI/CD is rooted in agile methodologies, and embodies the culture of a team or company, generally containing a set of operating principles, and a collection of practices which enable dev teams to release quality code more frequently and reliably. The term "Fail Fast" is an important one here, and gives development teams the ability to know when stuff is broken which is invaluable. It leads to faster fixes and delivery of quality code. Quickly fix issues, resubmit fixes. Deliver stable code consistently.
 
 ---
 @snap[west span-45 text-center]
@@ -118,7 +116,7 @@ Much has changed in the way that developers build and ship code. In implementing
 @snapend
 
 Note:
-Continuous integration automates the building and testing of your software. Continuous deployment is an extension of this automation and allows for your software to be deployed after every code commit that passes your test suite. The most successful development teams deploy their software often.
+So to summarise, Continuous integration automates the building and testing of your software. Continuous deployment is an extension of this automation and allows for your software to be deployed after every code commit that passes your test suite. The most successful development teams deploy their software often.
 
 The software development process consists of three main centers of work:
 
@@ -261,10 +259,10 @@ Once your team starts committing regularly and in small increments, they’ll se
 
 @snap[east span-55 text-8 text-center]
 @ul[list-spaced-bullets list-fade-fragments](true)
-- Make testing an integral part of the development process. @note [Fostering a rigorous testing culture is the most important element that a company needs for successful continuous integration. In order to confidently integrate new code into the mainline, the team needs the confidence that the code is sound. Engineers should write tests as each feature is being developed. At CircleCI, we run tests on any new code that is committed and our system alerts the developer if they have a successful “green” build, or if they need to fix issues because the build was “red.” Without tests, of course, green builds are meaningless. Ideally, the team is using automated testing, though that is not a requirement. QA services, such as Rainforest QA, can be integrated into the continuous integration process.]
-- Ensure that the testing environment mirrors production. @note [To support your rigorous testing culture, it’s important that the testing environment mirrors the production environment. Otherwise, you have no guarantee that what you’re testing will work in production. This means the testing environment should use the same version of the database, web server configuration, artifacts, etc.]
-- Use coding better practices, such as pair programming. @note [Another better practice for software development is pairing during coding. For more complex pieces of functionality, pairs discuss the architecture approach before a single line of code is written. Before any code is merged into production, another developer always reviews the code. This helps ensure that coding best practices have been used, the code does not conflict with existing code or code that another developer is working on, and the new functionality is scalable.]
-- Automate the deploy workflow. @note [Finally, to ensure that the entire software development pipeline is fast and efficient, the deploy workflow should also be automated. By automating the deploy workflow, the team gets their finished code to production more quickly. Because, after all, what’s the point of developing software quickly if it’s not getting to the customer?]
+- Make testing an integral part of the development process. @note[Fostering a rigorous testing culture is the most important element that a company needs for successful continuous integration. In order to confidently integrate new code into the mainline, the team needs the confidence that the code is sound. Engineers should write tests as each feature is being developed. At CircleCI, we run tests on any new code that is committed and our system alerts the developer if they have a successful “green” build, or if they need to fix issues because the build was “red.” Without tests, of course, green builds are meaningless. Ideally, the team is using automated testing, though that is not a requirement. QA services, such as Rainforest QA, can be integrated into the continuous integration process.]
+- Ensure that the testing environment mirrors production. @note[To support your rigorous testing culture, it’s important that the testing environment mirrors the production environment. Otherwise, you have no guarantee that what you’re testing will work in production. This means the testing environment should use the same version of the database, web server configuration, artifacts, etc.]
+- Use coding better practices, such as pair programming. @note[Another better practice for software development is pairing during coding. For more complex pieces of functionality, pairs discuss the architecture approach before a single line of code is written. Before any code is merged into production, another developer always reviews the code. This helps ensure that coding best practices have been used, the code does not conflict with existing code or code that another developer is working on, and the new functionality is scalable.]
+- Automate the deploy workflow. @note[Finally, to ensure that the entire software development pipeline is fast and efficient, the deploy workflow should also be automated. By automating the deploy workflow, the team gets their finished code to production more quickly. Because, after all, what’s the point of developing software quickly if it’s not getting to the customer?]
 @ulend
 @snapend
 
@@ -297,10 +295,61 @@ So earlier I mentioned that there were some key metrics to track regardless....
 Note:
 It’s helpful to have a regular cadence of reporting. Automated daily reports help ensure that if there is an error, the team catches it fast. And, analyzing the weekly reports allows teams to dive much deeper into the CI processes and find improvement areas.
 
+---
+@snap[midpoint]
+## TESTING
+![testing](assets/img/simpsons_testing.gif)
+@snapend
 
+So in case you thought I wasn't going to touch on testing, you're mistaken. We're going to spend the last few minutes going over the importance and different types. 
 
+---
+@snap[midpoint]
+## Continuous Testing
+@snapend
 
+Note: 
+Testing does get often overlooked, because let's be honest - you probably like testing as much as you like writing documentation. And as devs we tend to think it's going to operate exactly how we built it. But the reality is that's rarely the case. In order to make sure we're driving towards efficiency in our processes, we need to make sure Continuous Testing is part of the mix. The quality of the work being done has got to improve, and mistakes can be costly.
 
+In the time we have remaining, let's talk about the different types of tests you can add to your CI/CD pipeline.
 
+---
+@snap[midpoint]
+### Unit/component tests
+@snapend
 
+Note:
+Sometimes referred to as "commit tests", these cover the smallest possible component, unit, or functionality. They’re the cheapest and fastest tests to run since they don’t require a lot of dependencies or mocking. These should be done early to get them out of the way. One model, known as Test-driven development (TDD), requires unit tests to be designed first as a basis for clearly identifying what the code should do. Because such code changes can be fast and numerous, they must also be fast to execute.
 
+---
+@snap[midpoint]
+### Integration tests
+@snapend
+
+Note:
+These check how well each unit from the previous stage works with the other components, units, and functionalities. In a broader sense, it can test how services (such as APIs) integrate with one another.
+
+---
+@snap[midpoint]
+### UI layer testing
+@snapend
+
+Note:
+This is automated browser-based testing which tests basic user flow. It is expensive to set up and slow to run, so it should happen later in the pipeline.
+
+---
+@snap[west span-45 text-center]
+## Resources
+@snapend
+
+@snap[east span-55 text-8 text-center]
+@ul[list-spaced-bullets](false)
+- <a href="https://t.co/8x7B2TFAKj?amp=1">@size[32px]("DevOps for Dummies")</a>@size[32px]( - Emily Freeman)
+- <a href="https://www.amazon.com/Accelerate-Software-Performing-Technology-Organizations/dp/1942788339">@size[32px]("Accelerate")</a>@size[32px]( by Forsgren, Humble, & Kim)
+- <a href="https://www.amazon.com/DevOps-Handbook-World-Class-Reliability-Organizations/dp/1942788002">@size[32px]("The DevOps Handbook")</a>@size[32px]( by Kim, Debois, Willis, Humble, & Allspaw)
+- <a href="https://martinfowler.com/bliki/ContinuousDelivery.html">@size[32px]("Continuous Delivery")</a>@size[32px]( - Martin Fowler)
+- <a href="https://continuousdelivery.com/2010/08/continuous-delivery-vs-continuous-deployment/">@size[32px]("Continuous Delivery vs Continuous Deployment")</a>@size[32px]( - Jez Humble)
+
+- 
+@ulend
+@snapend
