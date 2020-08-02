@@ -353,3 +353,11 @@ This is automated browser-based testing which tests basic user flow. It is expen
 - 
 @ulend
 @snapend
+
+---
+### Thank You
+
+Jeremy Meiss<br /><br />
+@fab[twitter-square] @IAmJerdog<br />
+@fab[dev] @jerdog<br />
+@fab[linkedin] @jeremymeiss<br />
