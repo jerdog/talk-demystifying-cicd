@@ -3,10 +3,12 @@
 @snapend
 
 Note:
+I've been part of development teams where code would take weeks or months before it was pushed to testing, and often months before it would be deployed to production. And that was just one team, working on one feature, while other teams worked on other features doing the same thing. It was also not uncommon to be working on a project for a year - only to have it dumped because the business and/or customer had already moved past the need. Who here would prefer slow code delivery cycles? Every technology delivery team wants to increase their code delivery velocity and the quality of the code they push to market.
+
 - Who here is familiar with CI/CD?
 - Who knows the difference between CD and CD?
-- Who doesn't care and was looking to pass the time checking email during this session?
-I've been part of development teams where code would take weeks or months before it was pushed to testing, and often months before it would be deployed to production. And that was just one team, working on one feature, while other teams worked on other features doing the same thing. It was also not uncommon to be working on a project for a year - only to have it dumped because the business and/or customer had already moved past the need. Who here would prefer slow code delivery cycles? Every technology delivery team wants to increase their code delivery velocity and the quality of the code they push to market.
+- Who doesn't care and was looking to pass the time checking email during this session?   
+
 
 ---
 ## TickTock
@@ -21,7 +23,7 @@ Time is a dev's most important and valuable asset. If we don't manage our time p
 ![jeremy](assets/img/london-bridge-over-thames-jeremy-800px.png)
 @snapend
 
-@snap[east span-55 text-8 text-center]
+@snap[east span-55 text-08 text-center]
 Head of DevRel<br />
 ![width=300](assets/img/logo.png)
 @snapend
@@ -43,7 +45,7 @@ DevOps is a set of practices that combines software development (the "Dev") and 
 ![lifecycle](assets/img/devops_lifecycle.png)
 @snapend
 
-@snap[east span-55 text-8 text-center]
+@snap[east span-55 text-08 text-center]
 @ul[list-spaced-bullets list-fade-fragments](true)
 - Plan @note[Initially plan yourself regarding the type of application you need to develop. Make the rough picture regarding the development process]  
 - Code @note[Code the application as per the client requirement.  with the plan, you have made in the initial step.]  
@@ -71,7 +73,7 @@ CI/CD is rooted in agile methodologies, and embodies the culture of a team or co
 ## "CI"
 @snapend
 
-@snap[east span-55 text-8 text-center]
+@snap[east span-55 text-08 text-center]
 @ul[list-spaced-bullets list-fade-fragments](true)
 - Merge code changes often
 - Run automated tests to validate builds
@@ -89,7 +91,7 @@ Continuous integration is the practice where developers are merging code often t
 ## "CD"
 @snapend
 
-@snap[east span-55 text-8 text-center]
+@snap[east span-55 text-08 text-center]
 @ul[list-spaced-bullets list-fade-fragments](true)
 - Faster release cycles
 - Low-risk releases
@@ -145,19 +147,20 @@ Note:
 Logistics: This is the final step of shipping the new software to production. The logistics part of the software development process includes getting the tested and approved code into production. This includes the setup, configuration, and management of the production servers. To gain the full benefit of continuous integration, continuous deployment is necessary.
 
 ---
-@snap[midpoint]
 ## Benefits of CI
-@snapend
 
-Note:
-The fundamental tenet of continuous integration is quite simple: commit and integrate your code often—daily at a minimum. Such a small change in your software development process can yield big results.
-Using this development strategy, you can:
+@ul[list-spaced-bullets list-fade-fragments](true)
 - Improve team productivity and efficiency
 - Accelerate speed to market
 - Identify product/market fit
 - Release higher quality, more stable products
 - Increase customer satisfaction
 - Keep developers happy and shipping code
+@ulend
+
+Note:
+The fundamental tenet of continuous integration is quite simple: commit and integrate your code often—daily at a minimum. Such a small change in your software development process can yield big results.
+Using this development strategy, you can:
 
 ---
 @snap[midpoint]
@@ -169,9 +172,12 @@ You may be thinking: "How do these benefits accrue from such a simple change in 
 When you commit more often, you can identify and resolve merge conflicts earlier, or avoid them altogether. So, instead of writing a thousand lines of code and finding an error, you’ve only written a hundred. Finding the bugs in your code becomes an errand of a few minutes instead of a few hours. This leads to improved team productivity and helps developers ship working code more quickly.
 
 ---
-@snap[midpoint]
-### I feel the need.... the need for SPEED!
-@snapend
+### I feel the need....<br>the need for _SPEED_!
+
+@ol[list-spaced-bullets list-fade-fragments](true)
+1. Customers get access to new features faster
+2. Company gets a faster ROI from new features
+@olend
 
 Note:
 Shipping new features quickly means increasing your speed to market. This gives your team a competitive edge in two key ways:
@@ -181,7 +187,7 @@ Shipping new features quickly means increasing your speed to market. This gives 
 
 ---
 @snap[midpoint]
-## So now CI?
+## So now we CI?
 @snapend
 
 Note:
@@ -233,7 +239,7 @@ Do not try to automate everything. At least not all at once. One misconception a
 ### Proof of concept
 @snapend
 
-@snap[east span-55 text-8 text-center]
+@snap[east span-55 text-08 text-center]
 @ul[list-spaced-bullets list-fade-fragments](true)
 - A rigorous testing practice
 - Consistent software environments
@@ -257,7 +263,7 @@ Once your team starts committing regularly and in small increments, they’ll se
 ## CI/CD Better Practices
 @snapend
 
-@snap[east span-55 text-8 text-center]
+@snap[east span-55 text-08 text-center]
 @ul[list-spaced-bullets list-fade-fragments](true)
 - Make testing an integral part of the development process. @note[Fostering a rigorous testing culture is the most important element that a company needs for successful continuous integration. In order to confidently integrate new code into the mainline, the team needs the confidence that the code is sound. Engineers should write tests as each feature is being developed. At CircleCI, we run tests on any new code that is committed and our system alerts the developer if they have a successful “green” build, or if they need to fix issues because the build was “red.” Without tests, of course, green builds are meaningless. Ideally, the team is using automated testing, though that is not a requirement. QA services, such as Rainforest QA, can be integrated into the continuous integration process.]
 - Ensure that the testing environment mirrors production. @note[To support your rigorous testing culture, it’s important that the testing environment mirrors the production environment. Otherwise, you have no guarantee that what you’re testing will work in production. This means the testing environment should use the same version of the database, web server configuration, artifacts, etc.]
@@ -274,7 +280,7 @@ Developers who practice continuous integration commit early and often. This allo
 ## Key CI/CD Metrics
 @snapend
 
-@snap[east span-55 text-8 text-center]
+@snap[east span-55 text-08 text-center]
 @ul[list-spaced-bullets list-fade-fragments]
 - Lead time @note[Lead time is the length of time that it takes for your workflow to run from first trigger to completion. It is a measure of how quickly you can get a signal. A short lead time requires a maximally automated software development pipeline. That is why teams use continuous integration to automate building and testing. Automation of the pipeline via CI shrinks deployment timelines of weeks to months down to hours, if not minutes.]
 - Deployment frequency @note[Deployment frequency: How often your team kicks off a workflow is an indication of how many discrete units of work are moving through the development pipeline. With a fully automated software development pipeline, even complicated updates to your codebase can be deployed automatically. Hotfixes are available immediately — and they go through the same rigorous testing as any other update.]
@@ -298,9 +304,10 @@ It’s helpful to have a regular cadence of reporting. Automated daily reports h
 ---
 @snap[midpoint]
 ## TESTING
-![testing](assets/img/simpsons_testing.gif)
+![testing](https://media.giphy.com/media/3orieO2nOMDh5kqBoc/giphy.gif)
 @snapend
 
+Note:
 So in case you thought I wasn't going to touch on testing, you're mistaken. We're going to spend the last few minutes going over the importance and different types. 
 
 ---
@@ -342,15 +349,13 @@ This is automated browser-based testing which tests basic user flow. It is expen
 ## Resources
 @snapend
 
-@snap[east span-55 text-8 text-center]
+@snap[east span-55 text-08 text-center]
 @ul[list-spaced-bullets](false)
 - <a href="https://t.co/8x7B2TFAKj?amp=1">@size[32px]("DevOps for Dummies")</a>@size[32px]( - Emily Freeman)
 - <a href="https://www.amazon.com/Accelerate-Software-Performing-Technology-Organizations/dp/1942788339">@size[32px]("Accelerate")</a>@size[32px]( by Forsgren, Humble, & Kim)
 - <a href="https://www.amazon.com/DevOps-Handbook-World-Class-Reliability-Organizations/dp/1942788002">@size[32px]("The DevOps Handbook")</a>@size[32px]( by Kim, Debois, Willis, Humble, & Allspaw)
 - <a href="https://martinfowler.com/bliki/ContinuousDelivery.html">@size[32px]("Continuous Delivery")</a>@size[32px]( - Martin Fowler)
-- <a href="https://continuousdelivery.com/2010/08/continuous-delivery-vs-continuous-deployment/">@size[32px]("Continuous Delivery vs Continuous Deployment")</a>@size[32px]( - Jez Humble)
-
-- 
+- <a href="https://continuousdelivery.com/2010/08/continuous-delivery-vs-continuous-deployment/">@size[32px]("Continuous Delivery vs Continuous Deployment")</a>@size[32px]( - Jez Humble) 
 @ulend
 @snapend
 
