@@ -20,3 +20,4 @@ logo             : assets/img/twitter-iamjerdog.png
 logo-position    : bottom-left
 layout           : top
 # PITCHME-DOT-YAML-SETTINGS-THEME-BUILDER-GENERATED-END
+published        : true
