@@ -13,4 +13,9 @@ In this session the participants will be introduced to the basic fundamentals of
 ***Jeremy Meiss***  
 Jeremy is the Head of DevRel & Community at CircleCI, previously at Solace, Auth0, and XDA. He is a lover of all things coffee, community, open source, and tech. He is also house-broken, and (generally) plays well with others.
 
+## Conferences
+- [Javascript & Friends 2020](https://gitpitch.com/jerdog/talk-demystifying-cicd/gitpitch-base)
+
+## Viewing
+
 ***Note: Loading this locally requires [GitPitch Desktop](https://gitpitch.com/docs/work-offline/desktop/) and then is started via steps [here](https://gitpitch.com/docs/pro-features/desktop-launch), which in short would be `gpd` in the local folder of the repo and then loading up http://localhost:9000/ .***
